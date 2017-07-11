@@ -15,12 +15,12 @@ header{
 	z-index:10;
 }
 
-table.table1{
+table.header-tb{
 	border:0;
 	margin:auto;
 }
 
-table.table1 td.name1{
+table.header-tb td.insta-icons{
 	width:25px;
 	background-color:rgb(120,120,120);
 	margin:0;
@@ -32,7 +32,7 @@ table.table1 td.name1{
 	min-width:25px;
 }
 
-table.table1 td.name2{
+table.header-tb td.icon-line{
 	width:1px;
 	background-color:rgb(70,70,70);
 	height:50px;
@@ -40,7 +40,7 @@ table.table1 td.name2{
 	border:10px solid white;
 }
 
-table.table1 td.name3{
+table.header-tb td.insta{
 	width:100px;
 	background-color:rgb(170,170,170);
 	margin:0;
@@ -50,12 +50,12 @@ table.table1 td.name3{
 	cursor:pointer;
 }
 
-table.table1 td.name4{
+table.header-tb td.space1{
 	width:155px;
 	background-color:white;
 }
 
-table.table1 td.name5{
+table.header-tb td.search-bar{
 	width:200px;
 	background-color:rgb(200,200,200);
 	margin:0;
@@ -65,22 +65,22 @@ table.table1 td.name5{
 	cursor:text;
 }
 
-table.table1 td.name6{
+table.header-tb td.space2{
 	width:205px;
 	background-color:white;
 }
 
 .container{
-    width:55vw;
+        width:55vw;
 	height:55vw;
 	background-color:white;
 	margin: 60px auto;
-    border:1px solid rgb(210,210,210);
+        border:1px solid rgb(210,210,210);
 	margin-top:180px;
 	}
 
 
-.box{
+.photo{
 	width:100%;
 	background-color:rgb(180,180,180);
 	height:100%;
@@ -95,7 +95,7 @@ table.table1 td.name6{
 	margin-top:0;
 }
 
-.icon1{
+.com-love{
 	height:2.5vw;
 	width:2.5vw;
 	background-color:gray;
@@ -104,8 +104,6 @@ table.table1 td.name6{
 	cursor:pointer;
 	}
 	
-
-
 .dp{
 	height:30px;
 	width:30px;
@@ -125,9 +123,7 @@ footer{
 	margin:auto;
 }
 
-
-
-.low{
+.bottom-bar{
 	height:50px;
 	width:100%;
 	background-color:white;
@@ -140,7 +136,7 @@ footer{
 	align-items:center;
 }
 
-.icon2{
+.bottom-bar-icon{
 	width:40px;
 	height:40px;
 	background-color:rgb(120,120,120);
@@ -150,24 +146,24 @@ footer{
 
 @media only screen and (max-width:945px){
 	
-table.table1 td.name4{
+table.header-tb td.space1{
 	width:8%;
 }
 
-table.table1 td.name6{
+table.header-tb td.space2{
 	width:15%;
 }
 }
 
 @media only screen and (max-width:578px){
-	table.table1 td.name1, table.table1 td.name3{
+	table.header-tb td.insta-icons, table.header-tb td.insta{
 	display:none;	
 	}
 	
-	table.table1 td.name2{
+	table.header-tb td.icon-line{
 		visibility:hidden;
 	}
-	.low{
+	.bottom-bar{
 		visibility:visible;
 	}
 	
@@ -177,19 +173,12 @@ table.table1 td.name6{
 }
 	
 	@media only screen and (max-width:735px){
-	table.table1 td.name4{
+	table.header-tb td.space1{
 	   width:5%;
     }
 
-    table.table1 td.name6{
+    table.header-tb td.space2{
 	    width:10%;
     }
 	}
 	
-	/*@media only screen and (max-width:610px){
-	
-	.container{
-		width:100%;
-	    padding-top:100%;
-	}
-	}*/
