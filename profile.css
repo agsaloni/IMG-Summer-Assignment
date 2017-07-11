@@ -157,6 +157,15 @@ table.photos th{
 	border-radius:10%;
 }
 
+footer{
+	height:70px;
+	width:75%;
+	background-color:rgb(240,240,240);
+	border-top: 1px solid rgb(210,210,210);
+	bottom:0px;
+	margin:auto;
+}
+
 @media only screen and (max-width:945px){
 	
 table.header-tb td.space1{
