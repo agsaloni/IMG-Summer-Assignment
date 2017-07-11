@@ -15,12 +15,12 @@ header{
 	z-index:10;
 }
 
-table.table1{
+table.header-tb{
 	border:0;
 	margin:auto;
 }
 
-table.table1 td.name1{
+table.header-tb td.insta-icons{
 	width:25px;
 	background-color:rgb(120,120,120);
 	margin:0;
@@ -32,7 +32,7 @@ table.table1 td.name1{
 	min-width:25px;
 }
 
-table.table1 td.name2{
+table.header-tb td.icon-line{
 	width:1px;
 	background-color:rgb(70,70,70);
 	height:50px;
@@ -40,7 +40,7 @@ table.table1 td.name2{
 	border:10px solid white;
 }
 
-table.table1 td.name3{
+table.header-tb td.insta{
 	width:100px;
 	background-color:rgb(170,170,170);
 	margin:0;
@@ -50,12 +50,12 @@ table.table1 td.name3{
 	cursor:pointer;
 }
 
-table.table1 td.name4{
+table.header-tb td.space1{
 	width:155px;
 	background-color:white;
 }
 
-table.table1 td.name5{
+table.header-tb td.search-bar{
 	width:200px;
 	background-color:rgb(200,200,200);
 	margin:0;
@@ -65,12 +65,12 @@ table.table1 td.name5{
 	cursor:text;
 }
 
-table.table1 td.name6{
+table.header-tb td.space2{
 	width:205px;
 	background-color:white;
 }
 
-.top{
+.info-box{
 	background-color:rgb(240,240,240);
 	height: 20vw;
 	width:65vw;
@@ -119,12 +119,12 @@ table.table1 td.name6{
 }
 
 
-table.table2{
+table.photos{
 	margin: auto;
 	border:0;
 }
 
-table.table2 td{
+table.photos td{
 	width:290px;
 	height:290px;
 	border:10px solid rgb(240,240,240);
@@ -133,12 +133,12 @@ table.table2 td{
 	cursor:pointer;
 }
 
-table.table2 td:hover{
+table.photos td:hover{
 	opacity:0.7;
     transition-delay: 0.2s ease;
 }
 
-table.table2 th{
+table.photos th{
 	background-color:rgb(200,200,200);
 	height:20px;
 	text-align:left;
@@ -159,20 +159,20 @@ table.table2 th{
 
 @media only screen and (max-width:945px){
 	
-table.table1 td.name4{
+table.header-tb td.space1{
 	width:8%;
 }
 
-table.table1 td.name6{
+table.header-tb td.space2{
 	width:15%;
 }
-	table.table2{
+	table.photos{
 		width:100%;
 		margin: 0 auto;
 		border: 0;
 }
 
-    table.table2 td{
+    table.photos td{
 	border: 10px solid rgb(240,240,240);
 	width:32vw;
 	height: 32vw;
@@ -205,10 +205,10 @@ table.heading2{
 }
 
 @media only screen and (max-width:578px){
-	table.table1 td.name1, table.table1 td.name3{
+	table.header-tb td.insta-icons, table.header-tb td.insta{
 	display:none;	
 	}
-	table.table1 td.name2{
+	table.header-tb td.icon-line{
 		visibility:hidden;
 	}
 	.low{
@@ -225,15 +225,15 @@ footer{
 }
 	
 	@media only screen and (max-width:735px){
-	table.table1 td.name4{
+	table.header-tb td.space1{
 	   width:5%;
     }
 
-    table.table1 td.name6{
+    table.header-tb td.space2{
 	    width:10%;
     }
 	
-    table.table2 td{
+    table.photos td{
 		border:2px solid rgb(240,240,240);
 	}
 }
