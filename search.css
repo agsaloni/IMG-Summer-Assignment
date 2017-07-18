@@ -65,6 +65,10 @@ table.header-tb td.search-bar{
 	cursor:text;
 }
 
+
+
+
+
 table.header-tb td.space2{
 	width:205px;
 	background-color:white;
@@ -73,7 +77,7 @@ table.header-tb td.space2{
 .search-topic{
 	margin:30px auto;
 	margin-top:140px;
-	background-color:rgb(170,170,170);
+	background-color:rgb(150,150,150);
 	width:150px;
 	height:50px;
 	cursor:text;
@@ -82,7 +86,7 @@ table.header-tb td.space2{
 .posts_no{
 	margin:30px auto;
 	margin-bottom:80px;
-	background-color:rgb(170,170,170);
+	background-color:rgb(150,150,150);
 	width:200px;
 	height:30px;
 	cursor:text;
@@ -97,18 +101,18 @@ table.photos td{
 	width:290px;
 	height:290px;
 	border:10px solid rgb(240,240,240);
-	background-color:gray;
+	background-color:rgb(240,240,240);
 	opacity: 1;
 	cursor:pointer;
 }
 
 table.photos td:hover{
-	opacity:0.7;
+	opacity:0.8;
     transition-delay: 0.2s ease;
 }
 
 table.photos th{
-	background-color:rgb(200,200,200);
+	background-color:rgb(170,170,170);
 	height:20px;
 	text-align:left;
 	margin:15px;
@@ -124,6 +128,48 @@ table.photos th{
 	height:40px;
 	cursor:pointer;
 	border-radius:10%;
+}
+
+.mbox {
+    display: none; 
+    position: fixed; 
+    z-index: 20; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.mbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+	cursor:pointer;
 }
 
 footer{
@@ -223,4 +269,8 @@ table.header-tb td.space2{
 		margin-bottom:50px;
 		margin-top:0;
 	}
+	
+	.mbox-content {
+        width: 100%;
+    }
 }
