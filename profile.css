@@ -128,7 +128,7 @@ table.photos td{
 	width:290px;
 	height:290px;
 	border:10px solid rgb(240,240,240);
-	background-color:gray;
+	background-color:rgb(240,240,240);
 	opacity: 1;
 	cursor:pointer;
 }
@@ -136,15 +136,6 @@ table.photos td{
 table.photos td:hover{
 	opacity:0.7;
     transition-delay: 0.2s ease;
-}
-
-table.photos th{
-	background-color:rgb(200,200,200);
-	height:20px;
-	text-align:left;
-	margin:15px;
-	border:10px solid rgb(240,240,240);
-	cursor:text;
 }
 
 .more{
@@ -157,6 +148,47 @@ table.photos th{
 	border-radius:10%;
 }
 
+.mbox {
+    display: none; 
+    position: fixed; 
+    z-index: 20; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.mbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+	cursor:pointer;
+}
 footer{
 	height:70px;
 	width:75%;
@@ -227,7 +259,6 @@ table.heading2{
 footer{
 		display:none;
 	}
-	
 	.more{
 		width:90%;
 	}
@@ -245,4 +276,8 @@ footer{
     table.photos td{
 		border:2px solid rgb(240,240,240);
 	}
+	
+    .mbox-content {
+        width: 100%;
+    }
 }
