@@ -3,22 +3,18 @@
 <head>
 <link href="profile.css" type="text/css" rel="stylesheet">
 <title>Profile page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header>
-<table class="header-tb">
-<tr>
-<td class="insta-icons"></td>
-<td class="icon-line"></td>
-<td class="insta"><a href="home.html" target="_blank">____________</a></td>
-<td class="space1"></td>
-<td class="search-bar"><a href="search.html"  target="_blank">_________________________</a></td>
-<td class="space2"></td>
-<td class="insta-icons"></td>
-<td class="insta-icons"></td>
-<td class="insta-icons"><a href="profile.html"  target="_blank">___</a></td>
-</tr>
-</table>
+<div class="st"><div class="insta-icons"></div>
+                <div class="insta"></div>
+				</div>
+<div class="search-bar"></div>
+<div class="icons"><div class="insta-icons"></div>
+                   <div class="insta-icons"></div>			
+                   <div class="insta-icons"></div>
+				   </div>
 </header>
 <div class="info-box">
 <div class="dp"></div>
@@ -74,6 +70,11 @@ var span = document.getElementsByClassName("close")[0];
 
     span.onclick = function() { 
     modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 </script>
 
