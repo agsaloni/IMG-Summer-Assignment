@@ -4,23 +4,18 @@
 <head>
 <link href="search.css" type="text/css" rel="stylesheet">
 <title> Search page</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header>
-<table class="header-tb">
-<tr>
-<td class="insta-icons"></td>
-<td class="icon-line"></td>
-<td class="insta"><a href="home.html"  target="_blank">____________</a></td>
-<td class="space1"></td>
-<td class="search-bar"><a href="search.html"  target="_blank">_________________________</a></td>
-<td class="space2"></td>
-<td class="insta-icons"></td>
-<td class="insta-icons"></td>
-<td class="insta-icons"></td>
-</tr>
-</table>
+<div class="st"><div class="insta-icons"></div>
+                <div class="insta"></div>
+				</div>
+<div class="search-bar"></div>
+<div class="icons"><div class="insta-icons"></div>
+                   <div class="insta-icons"></div>			
+                   <div class="insta-icons"></div>
+				   </div>
 </header>
 <div class="search-topic"></div>
 <div class="posts_no"></div>
@@ -68,7 +63,6 @@
 
 <script>
 var modal = document.getElementById('Modal');
-
 var img = document.getElementById('pic');
 var modalImg = document.getElementById("pic2");
 var captionText = document.getElementById("caption");
@@ -78,9 +72,13 @@ img.onclick = function(){
     captionText.innerHTML = this.alt;
 }
 var span = document.getElementsByClassName("close")[0];
-
     span.onclick = function() { 
     modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 </script>
 
