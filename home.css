@@ -7,67 +7,50 @@ body{
 
 header{
 	width:100%;
-	height:80px;
+	height:70px;
 	background-color:white;
 	border-bottom: 1px solid rgb(210,210,210);
 	position:fixed;
 	top:0px;
 	z-index:10;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
 }
 
-table.header-tb{
-	border:0;
-	margin:auto;
-}
-
-table.header-tb td.insta-icons{
+.insta-icons{
 	width:25px;
+	height:25px;
 	background-color:rgb(120,120,120);
-	margin:0;
 	border:10px solid white;
 	border-top:22px solid white;
 	border-bottom:22px solid white;
 	cursor:pointer;
-	table-layout:fixed;
+	display:inline-block;
 	min-width:25px;
 }
 
-table.header-tb td.icon-line{
-	width:1px;
-	background-color:rgb(70,70,70);
-	height:50px;
-	margin:0;
-	border:10px solid white;
-}
-
-table.header-tb td.insta{
+.insta{
 	width:100px;
+	height:25px;
 	background-color:rgb(170,170,170);
 	margin:0;
 	border:10px solid white;
 	border-top:22px solid white;
 	border-bottom:22px solid white;
 	cursor:pointer;
+	display:inline-block;
 }
 
-table.header-tb td.space1{
-	width:155px;
-	background-color:white;
-}
-
-table.header-tb td.search-bar{
+.search-bar{
 	width:200px;
+	height:25px;
 	background-color:rgb(200,200,200);
-	margin:0;
-	border:12px solid white;
+	border:10px solid white;
 	border-top:22px solid white;
 	border-bottom:22px solid white;
 	cursor:text;
-}
-
-table.header-tb td.space2{
-	width:205px;
-	background-color:white;
+	display:inline-block;
 }
 
 .container{
@@ -144,24 +127,9 @@ footer{
 	cursor:pointer;
 }
 
-@media only screen and (max-width:945px){
-	
-table.header-tb td.space1{
-	width:8%;
-}
-
-table.header-tb td.space2{
-	width:15%;
-}
-}
-
-@media only screen and (max-width:578px){
-	table.header-tb td.insta-icons, table.header-tb td.insta{
-	display:none;	
-	}
-	
-	table.header-tb td.icon-line{
-		visibility:hidden;
+@media only screen and (max-width:580px){
+	.st, .icons{
+		display:none;
 	}
 	.bottom-bar{
 		visibility:visible;
@@ -171,14 +139,3 @@ table.header-tb td.space2{
 		display:none;
 	}
 }
-	
-	@media only screen and (max-width:735px){
-	table.header-tb td.space1{
-	   width:5%;
-    }
-
-    table.header-tb td.space2{
-	    width:10%;
-    }
-	}
-	
