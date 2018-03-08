@@ -220,5 +220,63 @@ table.heading2{
 	visibility:visible;
 }
 }
+@media only
+screen and (max-width:580px){
+
+	
+
+	.st, .icons{
+
+		display:none;
+
+	}
+
+	.bottom-bar{
+
+		visibility:visible;
+
+	}
+
+
+
+footer{
+
+		display:none;
+
+	}
+
+	
+
+	.more{
+
+		width:90%;
+
+	}
+
+}
+
+	
+
+	@media only screen and (max-width:735px){
+
+	
+
+	
+
+    table.photos td{
+
+		border:2px solid rgb(240,240,240);
+
+	}
+
+	
+
+.mbox-content {
+
+        width: 100%;
+
+    }
+
+}
 
 
